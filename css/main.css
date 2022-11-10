@@ -1,0 +1,97 @@
+:root {
+    --text: #282828;
+    --button-text: #FFFFFF;
+    --button: #1B82D6;
+    --button-hover: #282828;
+    --price: #FF0000;
+    --border: #D6D4D4;
+}
+.html, body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 13px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 272px;
+    padding: 8px 8px 4px;
+    border: solid;
+    border-width: 1px;
+    border-color: var(--border);
+    justify-content: center;
+    margin: -1px 0 0 -1px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover {
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.card__content{
+    text-align: center;
+}
+.card__content > *{
+    margin: 0;
+    font-family: "Poppins",Arial,Helvetica,sans-serif;
+}
+.card__info{
+    font-weight:600;
+    font-size: 13px;
+}
+.card__info:hover{
+    text-decoration: underline;
+}
+.card__dostupnost {
+    margin: 0 0 9px;
+}
+.card__price {
+    padding: 0 0 5px;
+    color: var(--price);
+    font-weight: 600;
+}
+.card__btn {
+    padding: 8px 12px;
+    background-color: var(--button);
+    display: block; 
+    justify-content: center;
+    width: 40%;
+    color: var(--button-text);
+    margin: auto;
+    display: flex;
+}
+.card__btn:hover{
+    background-color: var(--button-hover);
+}
+.card__btn-text{
+    font-family: "Poppins",Arial,Helvetica,sans-serif;
+    margin: 0;
+    font-size: 12px;
+}
+.card__btn-icon {
+    width: 1em;
+    margin-right: 4px;
+}
+.card__img  {
+    max-width: 250px;
+    display: block
+}
+.card__img-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.New {
+    display: block;
+    padding: 5px 6px;
+    border-radius: 3px;
+    background-color: var(--button);
+    color: var(--button-text)
+}
+.bubble {
+    width: 100%;
+    position: absolute;
+    display: flex;
+}
