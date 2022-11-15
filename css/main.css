@@ -43,6 +43,7 @@
 }
 .card__info:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 .card__dostupnost {
     margin: 0 0 9px;
@@ -64,6 +65,7 @@
 }
 .card__btn:hover{
     background-color: var(--button-hover);
+    cursor: pointer;
 }
 .card__btn-text{
     font-family: "Poppins",Arial,Helvetica,sans-serif;
