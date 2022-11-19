@@ -16,22 +16,20 @@
     flex-wrap: wrap;
 }
 .card{
-    max-width: 272px;
+    max-width: 21em ;
     padding: 8px 8px 4px;
     border: solid;
     border-width: 1px;
     border-color: var(--border);
-    justify-content: center;
     margin: -1px 0 0 -1px;
     display: block;
-    display: flex;
-    flex-direction: column;
 }
 .card:hover {
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 .card__content{
     text-align: center;
+    margin-top: .5em;
 }
 .card__content > *{
     margin: 0;
@@ -40,18 +38,20 @@
 .card__info{
     font-weight:600;
     font-size: 13px;
+    text-decoration: none;
+    color: var(--text)
 }
 .card__info:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 .card__dostupnost {
-    margin: 0 0 9px;
+    margin: 1em 0;
 }
 .card__price {
     padding: 0 0 5px;
     color: var(--price);
     font-weight: 600;
+    
 }
 .card__btn {
     padding: 8px 12px;
@@ -65,35 +65,41 @@
 }
 .card__btn:hover{
     background-color: var(--button-hover);
-    cursor: pointer;
 }
 .card__btn-text{
     font-family: "Poppins",Arial,Helvetica,sans-serif;
     margin: 0;
     font-size: 12px;
+    
 }
 .card__btn-icon {
     width: 1em;
     margin-right: 4px;
 }
 .card__img  {
-    max-width: 250px;
-    display: block
+    display: block;
+    margin: 0 auto;
 }
 .card__img-wrapper {
     display: flex;
     justify-content: center;
     height: 250px;
 }
-.New {
-    display: block;
+.stitek {
+    display: inline-block;
     padding: 5px 6px;
     border-radius: 3px;
     background-color: var(--button);
     color: var(--button-text)
 }
-.bubble {
-    width: 100%;
-    position: absolute;
-    display: flex;
+.card__btn-text::before {
+    margin-left: -10px;
+    content: "\f07a";
+    font-family: "FontAwesome";
+    display: inline-block;
+    font-size: 13px;
+    line-height: 12px;
+    width: 30px;
+    text-align: center;
+    font-weight: normal;
 }
